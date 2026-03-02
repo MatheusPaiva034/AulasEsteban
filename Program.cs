@@ -1,18 +1,19 @@
-﻿
-Console.WriteLine("Exercicio 1");
-double distancia, x1, x2, y1, y2;
+﻿int n1, n2, n3;
+double resultado, R, S;
 
-Console.WriteLine("digite o x1");
-x1 = double.Parse(Console.ReadLine());
+Console.WriteLine("Digite o primeiro numero");
+n1 = int.Parse(Console.ReadLine());
 
-Console.WriteLine("digite o y1");
-y1 = double.Parse(Console.ReadLine());
+Console.WriteLine("Digite o segundo numero");
+n2 = int.Parse(Console.ReadLine());
 
-Console.WriteLine("digite o x2");
-x2 = double.Parse(Console.ReadLine());
+Console.WriteLine("Digite o terceiro numero");
+n3 = int.Parse(Console.ReadLine());
 
-Console.WriteLine("digite o y2");
-y2 = double.Parse(Console.ReadLine());
+R = Math.Pow(n1 + n2 ,2);
 
-distancia = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-Console.WriteLine("A distancia é :" + distancia);
+S = Math.Pow(n2 + n3 ,2);
+
+resultado = (R + S) / 2;
+
+Console.WriteLine("O resultado ´ :" + resultado);
