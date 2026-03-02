@@ -1,19 +1,40 @@
-﻿int n1, n2, n3;
-double resultado, R, S;
+﻿Console.WriteLine("Matheus Paiva Batista 032064");
 
-Console.WriteLine("Digite o primeiro numero");
-n1 = int.Parse(Console.ReadLine());
+int A, B, C, maior;
 
-Console.WriteLine("Digite o segundo numero");
-n2 = int.Parse(Console.ReadLine());
+Console.Write("Digite o valor de A - ");
+A = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Digite o terceiro numero");
-n3 = int.Parse(Console.ReadLine());
+Console.Write("Digite o valor de B - ");
+B = int.Parse(Console.ReadLine());
 
-R = Math.Pow(n1 + n2 ,2);
+Console.Write("Digite o valor de C - ");
+C = int.Parse(Console.ReadLine());
 
-S = Math.Pow(n2 + n3 ,2);
 
-resultado = (R + S) / 2;
+if (A > B && A > C)
+{
+    maior = A;
+}
+else if (B > A && B > C)
+{
+    maior = B;
+}
+else
+{
+    maior = C;
+}
 
-Console.WriteLine("O resultado ´ :" + resultado);
+Console.WriteLine("O valor maior é:" + maior);
+
+int soma = A + B + C;
+
+if (soma % 2 == 0)
+{
+    Console.WriteLine("A soma é um número par.");
+}
+else
+{
+    Console.WriteLine("A soma é um número impar.");
+}
+
